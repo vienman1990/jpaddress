@@ -1,0 +1,50 @@
+{
+    "name": "vienman1990/jpaddress",
+    "description": "search address in japan",
+    "keywords": [
+        "vienman1990",
+        "jpaddress"
+    ],
+    "homepage": "https://github.com/vienman1990/jpaddress",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vienman1990",
+            "email": "jobken90@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.20",
+        "laravel/pint": "^1.0",
+        "spatie/ray": "^1.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vienman1990\\JPAddress\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vienman1990\\JPAddress\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "fixcsv": "php src/fixcsv.php",
+        "test": "vendor/bin/pest",
+            "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
